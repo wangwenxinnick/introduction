@@ -1,22 +1,24 @@
 {
   "name": "valentine",
   "version": "1.0.0",
-  "description": "情人节",
+  "description": "1",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yacan8/valentine.git"
+    "url": "git+https://github.com/wangwenxinnick/introduction.git"
   },
-  "author": "can.yang",
+  "author": "wenxin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yacan8/valentine/issues"
+    "url": "https://github.com/wangwenxinnick/introduction/issues"
   },
-  "homepage": "https://github.com/yacan8/valentine#readme",
+  "homepage": "https://github.com/wangwenxinnick/introduction#readme",
   "dependencies": {
     "prismjs": "^1.17.1",
     "react": "16.0",
@@ -39,6 +41,7 @@
     "css-loader": "^1.0.0",
     "cssnano": "^4.0.5",
     "file-loader": "^2.0.0",
+    "gh-pages": "^3.1.0",
     "happypack": "^5.0.0",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.8.1",
