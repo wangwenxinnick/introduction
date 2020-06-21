@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/wangwenxinnick/introduction/issues"
   },
-  "homepage": "https://github.com/wangwenxinnick/introduction#readme",
+  "homepage": "https://wangwenxinnick.github.io/introduction/",
   "dependencies": {
     "prismjs": "^1.17.1",
     "react": "16.0",
