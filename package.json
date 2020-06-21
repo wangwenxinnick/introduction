@@ -5,18 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yacan8/valentine.git"
+    "url": "git+https://github.com/wangwenxinnick/introduction.git"
   },
   "author": "can.yang",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yacan8/valentine/issues"
-  },
-  "homepage": "https://github.com/yacan8/valentine#readme",
+  "homepage": "https://wangwenxinnick.github.io/introduction/",
   "dependencies": {
     "prismjs": "^1.17.1",
     "react": "16.0",
