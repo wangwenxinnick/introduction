@@ -98,7 +98,7 @@ html{
   -webkit-transform-origin: 50% 0% 0;`}
 }
 
-/* 画一个方块，当左心室和右心室 */
+/* 画一个方块，当左心房和右心房 */
 .heart {
   width: 100px;
   height: 100px;
